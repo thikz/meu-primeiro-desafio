@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro desafio</title>
+    </style>
+    <h1>Bem vindo jogador!</h1> 
+    <p>Digite o nome e a quantidade de XP do seu personagem.</p>
+    <script>
+        function perguntarNomeEaXP() {
+            let nomeHeroi = window.prompt("Qual é o nome do seu personagem?");
+            let xp = window.prompt("Qual é o XP do seu personagem?");
+            if (xp <= 1000){
+    window.alert("O heroi de nome: " + nomeHeroi + " está no nível: Ferro")
+            } else if (xp >= 1001 && xp <= 2000) {
+    window.alert("O heroi de nome: " + nomeHeroi + " está no nível: Bronze")
+            } else if (xp >= 2001 && xp <= 3000) {
+    window.alert("O heroi de nome: " + nomeHeroi + " está no nível: Prata")
+            } else if (xp >= 3001 && xp <= 4000) {
+    window.alert("O heroi de nome: " + nomeHeroi + " está no nível: Ouro")
+            } else if (xp >= 4001 && xp <= 6000) {
+    window.alert("O heroi de nome: " + nomeHeroi + " está no nível: Platina")
+            } else if (xp >= 6001 && xp <= 8000) {
+    window.alert("O heroi de nome: " + nomeHeroi + " está no nível: Diamante")
+            } else if (xp >= 8001 && xp <= 9000) {
+    window.alert("O heroi de nome: " + nomeHeroi + " está no nível: Ascendente")
+            } else if (xp >= 9001 && xp <= 10000) {
+    window.alert("O heroi de nome: " + nomeHeroi + " está no nível: Imortal")
+            } while (xp > 10000){
+    window.alert("O heroi de nome: " + nomeHeroi + " está no nível Radiante")  
+            break
+            }
+            /* else {
+    window.alert("O heroi de nome: " + nomeHeroi + " está no nível Radiante")
+            } */
+        }
+    </script>
+</head>
+<body>
+    <button onclick="perguntarNomeEaXP()">Qual o nome e a quantidade de XP do seu personagem?</button>
+</body>
+</html>
